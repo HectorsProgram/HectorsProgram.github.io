@@ -1,102 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Sketchy Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: white;
-      color: black;
-      font-family: 'Shadows Into Light', cursive;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hector Aquino - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
 
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      border: 2px dashed #333;
-      box-shadow: 4px 4px 0 #999;
-    }
+        .gray-text {
+            color: #aaa;
+        }
 
-    h1, h2 {
-      border-bottom: 2px dashed #444;
-      display: inline-block;
-      margin-bottom: 10px;
-      padding-bottom: 5px;
-    }
+        .profile-pic {
+            width: 300px;
+            height: 300px;
+            background-color: #333;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin: auto;
+        }
 
-    .section {
-      margin-top: 30px;
-      padding: 10px;
-      border: 2px dashed #666;
-      box-shadow: 3px 3px 0 #aaa;
-    }
+        .tech-badge {
+            background-color: #222;
+            color: #fff;
+            border: 1px solid #444;
+            margin: 5px;
+        }
 
-    a {
-      color: #111;
-      text-decoration: none;
-      border-bottom: 1px dotted #555;
-    }
+        .section-divider {
+            border-top: 1px solid #444;
+            margin: 3rem 0;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        .social-icons a {
+            color: #aaa;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
 
-    .project {
-      margin-bottom: 20px;
-    }
+        .social-icons a:hover {
+            color: #fff;
+        }
 
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
+        .project-card {
+            background-color: #111;
+            border: 1px solid #333;
+            padding: 1rem;
+            border-radius: 10px;
+        }
 
-    .footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+        .project-card a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>My Sketchy Portfolio</h1>
-    <p>Hello! I'm <strong>Your Name</strong>, a creative developer who loves sketching ideas into code.</p>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p>I specialize in building web apps with a clean and conceptual style. This portfolio is drawn from scratch (literally!).</p>
+    <div class="container text-center mt-5">
+        <div class="profile-pic mb-4" style="background-image: url('hector.JPG');">
+            <!-- Placeholder for photo -->
+        </div>
+        <h1 class="mb-0">Hector Aquino</h1>
+        <p class="gray-text">ASP.NET Core Developer | C# | Unity | Computer Science Graduate</p>
+
+        <div class="social-icons mt-3">
+            <a href="https://www.linkedin.com/in/hector-aquino-63780a1b6/" target="_blank" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:hectoraquinoha23@gmail.com" title="Email">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+        </div>
     </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>🖌️ PencilPost</h3>
-        <p>A sketch-themed blogging platform. <a href="#">View project →</a></p>
-      </div>
-      <div class="project">
-        <h3>📁 WireBox</h3>
-        <p>A file-sharing app with a hand-drawn interface. <a href="#">View project →</a></p>
-      </div>
+    <div class="container mt-5">
+        <h2>About Me</h2>
+        <p class="gray-text">
+            I'm a passionate software developer with experience in ASP.NET Core and C#. I build full-stack applications with a focus on performance and clean architecture. I'm also experienced in Unity for game development and interactive applications. 
+            <br><br>
+            Graduated with a Bachelor's in Computer Science from the University of the Cordilleras.
+        </p>
+
+        <div class="section-divider"></div>
+
+        <h2>Tech Stack</h2>
+        <div class="d-flex flex-wrap">
+            <span class="badge tech-badge">ASP.NET Core</span>
+            <span class="badge tech-badge">C#</span>
+            <span class="badge tech-badge">Entity Framework</span>
+            <span class="badge tech-badge">Blazor</span>
+            <span class="badge tech-badge">SQL Server</span>
+            <span class="badge tech-badge">HTML</span>
+            <span class="badge tech-badge">CSS</span>
+            <span class="badge tech-badge">JavaScript</span>
+            <span class="badge tech-badge">Bootstrap</span>
+            <span class="badge tech-badge">Unity</span>
+            <span class="badge tech-badge">Git</span>
+            <span class="badge tech-badge">GitHub</span>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <h2>Projects</h2>
+        <div class="project-card mt-3">
+            <h4>Mini Facebook Clone</h4>
+            <p class="gray-text">
+                A lightweight clone of Facebook built with ASP.NET Core MVC, featuring friend requests, notifications, and profile views.
+            </p>
+            <p>
+                <strong>Tech used:</strong> ASP.NET Core, Entity Framework, Bootstrap, JavaScript
+            </p>
+            <a href="https://github.com/HectorsProgram/SimpleFacebook" target="_blank">View on GitHub →</a>
+        </div>
     </div>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-        <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
-      </ul>
-    </div>
+    <footer class="text-center mt-5 p-4 gray-text">
+        &copy; 2025 Hector Aquino. Built with Bootstrap.
+    </footer>
 
-    <div class="footer">
-      ✏️ Designed with a pencil & keyboard — 2025
-    </div>
-  </div>
 </body>
 </html>
